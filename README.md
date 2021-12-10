@@ -88,4 +88,25 @@ frustum과 eye, center의 위치와 LOS를 표시해 보고 이를 이용하여 
 -----------------------------------
 
 ## HW3
-1. 
+1. 아래의 DDA 알고리즘 코드와 MidpointLine함수를 이용하여 브레스넘 알고리즘 OpenGL 코드를 완성해 보고자 한다. 
+원래 DDA 알고리즘 코드에서 불필요한 부분은 지워도 된다. 단,MidpointLine 함수에서 x2>x1이고 선분의 기울기는 1보다 작다고 가정하자.
+
+   https://www.dropbox.com/s/w5vd1ieul2thvof/DDA.txt?dl=0
+   
+   
+   1) 선분의 양 끝점의 (x, y) 좌표가 (0, 0), (9, 5)로 주어졌을 때, line rasterization 결과를 표시해 보자. 업데이트 되는 D값을 구해라.
+   2) 브레스넘 알고리즘을 완성한 후에 1)에서의 예에 대해서 최초 결정 변수 D값부터 종료될 때까지의 D값을 출력해보자. 1)의 결과와 동일한가?
+   3) 브레스넘 알고리즘은 다음 후보 픽셀들의 중점을 이용하여 선분의 rasterization을 수행한다. 2)번의 경우 총 몇 개의 중점을 이용하였는가? 
+
+
+2. ‘block.off’ 메쉬 파일은 off 파일 포맷을 사용하여 메쉬를 표현하였다. 파일을 편집기에서 열어보면 1번째 라인은 파일 포맷을 나타낸다 (이 부분은 메모리에 저장할 필요는 없다). 
+2번째 line은 vertex 수, face 수, edge수를 의미 한다. 이 예에서는 edge 수를 사용하지 않으므로 무시하자. 
+그 다음 라인부터는 vertex 수만큼 (이 예에서는 2,132개 ) vertex 의 x, y, z 좌표 정보가 담겨 있다. 
+가장 위부터 vertex의 index를 나타낼 때 0번 vertex, 그 다음 line은 1번 vertex 이런 순서이다. 
+그 후에는 face 수만큼 line이 있는데 각 line 에는 각 face의 vertex 수, 각 face를 이루는 vertex index (몇 번째 vertex) 정보가 있다.
+
+
+   1) C나 C++의 파일 입출력을 이용하여 위의 ‘trim-star.off’ 메쉬 파일을 읽어보자.
+   배열을 만들 때 1번째 line에서 읽은 vertex 수, face 수만큼 각각의 vertex, face 배열을 만들고 for 반복문을 이용하여 각 line 별로 읽으면서 Vertex의 x, y, z 좌표 정보 및 face 정보를 각 배열에 저장 하자.
+   2) 1)에서 각 배열에 저장한 메쉬를 polygon으로 OpenGL을 이용하여 출력해보고 그 결과를 스크린샷으로 레포트에 넣어보자. 
+   Meshlab으로 시각화한 결과와 비슷하게 나오는가? 각 polygon의 색은 임의로 정하고 적당한 가시 부피를 사용하자. 조명 처리는 따로 하지 않는다.
