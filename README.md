@@ -155,5 +155,11 @@ Alpha값을 얼마를 주면 아래와 같은 결과를 얻을 수 있을까? �
 만일 glEnable(GL_DEPTH_TEST)를 사용하여 depth buffer를 사용하면 결과가 어떻게 바뀔까? 
 출력 결과를 보여주고 결과에 대해서 이유를 설명해보자.
 
+<div align="center">
+  
+  
+
+</div>
+
 
 5. 
