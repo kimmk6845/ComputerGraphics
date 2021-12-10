@@ -110,3 +110,14 @@ frustum과 eye, center의 위치와 LOS를 표시해 보고 이를 이용하여 
    배열을 만들 때 1번째 line에서 읽은 vertex 수, face 수만큼 각각의 vertex, face 배열을 만들고 for 반복문을 이용하여 각 line 별로 읽으면서 Vertex의 x, y, z 좌표 정보 및 face 정보를 각 배열에 저장 하자.
    2) 1)에서 각 배열에 저장한 메쉬를 polygon으로 OpenGL을 이용하여 출력해보고 그 결과를 스크린샷으로 레포트에 넣어보자. 
    Meshlab으로 시각화한 결과와 비슷하게 나오는가? 각 polygon의 색은 임의로 정하고 적당한 가시 부피를 사용하자. 조명 처리는 따로 하지 않는다.
+
+
+3. 아래는 3차 (cubic) Bezier curve를 2번 사용하고 끝에 polyline을 연결하여 만들었다. 
+적당한 가시공간을 설정하고 Bezier curve를 위한 control points들을 설정하고 아래와 같은 모양을 만들어 보자. 
+어떻게 control points들을 설정하였고 polyline을 사용하였는지 설명하고 실행 결과를 보여라.
+
+<div align="center">
+
+  
+  
+</div>
