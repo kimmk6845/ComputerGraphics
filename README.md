@@ -38,3 +38,9 @@ drdisc 함수를 완성하여 아래 왼쪽과 같은 도넛 모양을 출력해
 원을 모든 각도에서 그리지 않고 일부만 그리는 것을 4번 반복하면 다음과 같은 모양을 만들 수 있다. 
 겉 테두리는 GL_LINE_STRIP 사용하여 그릴 수 있다 아래 왼쪽과 같은 모양을 만들어 보자.
 여러 개의 viewport를 사용하여 비슷한 방법으로 아래 오른쪽과 같은 tiling을 만들어 보자.
+
+<div align="center">
+  
+  ![HW1_4](https://user-images.githubusercontent.com/71704350/145532386-ca883673-aacb-43cd-981a-b64b2e74165b.PNG)
+
+</div>
