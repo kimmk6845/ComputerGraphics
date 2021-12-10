@@ -16,6 +16,12 @@ for 반복문을 사용하자.
 아래는 triangle strip의 일부만 보여주고 나머지 부분은 직접 triangle strip을 완성하자. 
 단, 최소한의 vertex를 이용하여 triangulation을 하고자 한다. 아래와 같이 square annulus의 코너점들을 활용하여 최소한의 vertex 개수를 사용해 보자. Triangulation이 보이도록 초록색과 파란색을 교대로 사용하여 삼각형의 색을 입혀보자.
 
+<div align="center">
+
+  ![HW1_2](https://user-images.githubusercontent.com/71704350/145532108-c6c13084-83e0-40f3-88a1-2b05dcdfb7e9.PNG)
+  
+</div>
+
 3. OpenGL에서 물체를 그릴 때 그리는 순서에 따라서 앞의 물체 위에 뒤의 물체가 덮어 씌워질 수 이다. 아래 왼쪽과 같은 도넛 모양을 만들기 위한 한가지 방법은 빨간색 원 모양 (큰 원)을 먼저 그린 후 하얀색 원 (작은 원)을 나중에 덮어 씌우는 방법이다
 drdisc함수가 drdisc(반지름, 원의 중심의 x좌표, 원의 중심의 y좌표)라고 정의된 함수라면 다음과 같이 drdisc 함수를 2번 연속으로 호출함으로써 빨간색 원 위에 흰색 원을 덮어 씌우는 효과를 줄 수 있다. 
 drdisc 함수를 완성하여 아래 왼쪽과 같은 도넛 모양을 출력해보자 
