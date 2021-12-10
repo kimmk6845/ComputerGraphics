@@ -6,6 +6,8 @@
 for 반복문을 사용하자. 
 가시 공간은 gluOrtho2D의 L=0.0, R=4.0, B=-1.0, T=1.0으로 설정하였고 screen window의 크기를 가로 400 pixel, 세로 200 pixel로 정하였다.
 
+![HW1_1](https://user-images.githubusercontent.com/71704350/145531738-79dd5a64-de80-4b75-a8fc-a8bf388be981.PNG)
+
 2. 가시 공간과 screen window의 크기를 적절하게 설정하고 OpenGL의 GL_TRIANGLE_STRIP을 한번만 사용하여 아래와 같은 square annulus를 screen window에 출력하고자 한다.
 아래는 triangle strip의 일부만 보여주고 나머지 부분은 직접 triangle strip을 완성하자. 
 단, 최소한의 vertex를 이용하여 triangulation을 하고자 한다. 아래와 같이 square annulus의 코너점들을 활용하여 최소한의 vertex 개수를 사용해 보자. Triangulation이 보이도록 초록색과 파란색을 교대로 사용하여 삼각형의 색을 입혀보자.
