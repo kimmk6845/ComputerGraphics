@@ -12,6 +12,7 @@ for 반복문을 사용하자.
   
 </div>
 
+
 2. 가시 공간과 screen window의 크기를 적절하게 설정하고 OpenGL의 GL_TRIANGLE_STRIP을 한번만 사용하여 아래와 같은 square annulus를 screen window에 출력하고자 한다.
 아래는 triangle strip의 일부만 보여주고 나머지 부분은 직접 triangle strip을 완성하자. 
 단, 최소한의 vertex를 이용하여 triangulation을 하고자 한다. 아래와 같이 square annulus의 코너점들을 활용하여 최소한의 vertex 개수를 사용해 보자. Triangulation이 보이도록 초록색과 파란색을 교대로 사용하여 삼각형의 색을 입혀보자.
@@ -21,6 +22,7 @@ for 반복문을 사용하자.
   ![HW1_2](https://user-images.githubusercontent.com/71704350/145532108-c6c13084-83e0-40f3-88a1-2b05dcdfb7e9.PNG)
   
 </div>
+
 
 3. OpenGL에서 물체를 그릴 때 그리는 순서에 따라서 앞의 물체 위에 뒤의 물체가 덮어 씌워질 수 이다. 아래 왼쪽과 같은 도넛 모양을 만들기 위한 한가지 방법은 빨간색 원 모양 (큰 원)을 먼저 그린 후 하얀색 원 (작은 원)을 나중에 덮어 씌우는 방법이다
 drdisc함수가 drdisc(반지름, 원의 중심의 x좌표, 원의 중심의 y좌표)라고 정의된 함수라면 다음과 같이 drdisc 함수를 2번 연속으로 호출함으로써 빨간색 원 위에 흰색 원을 덮어 씌우는 효과를 줄 수 있다. 
@@ -33,6 +35,7 @@ drdisc 함수를 완성하여 아래 왼쪽과 같은 도넛 모양을 출력해
   ![HW1_3](https://user-images.githubusercontent.com/71704350/145532221-52d991a5-2be5-4c8a-b7bb-03b0bbf2c0e0.PNG)
   
 </div>
+
 
 4. 원을 parametric form을 이용해 근사화 하는 방법을 배웠다. 
 원을 모든 각도에서 그리지 않고 일부만 그리는 것을 4번 반복하면 다음과 같은 모양을 만들 수 있다. 
@@ -121,3 +124,36 @@ frustum과 eye, center의 위치와 LOS를 표시해 보고 이를 이용하여 
   ![HW3](https://user-images.githubusercontent.com/71704350/145560559-56fd02f9-e4be-46ec-aca1-1e7a0d91cc63.PNG)
   
 </div>
+
+
+
+---------------------------
+
+## HW4
+1. basic barn 메쉬 정보를 이용하여 basic barn 메쉬를 그리고자 한다.
+gluLookAt(5.0, 5.0, 5.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0)을 이용하여 입체감 있게 LOS를 조정하자. 조명 모델을 사용하지 않고 각 face에는 yellow color를 입혀보고 투영 시 ‘glFrustum’을 사용하자. 
+배경색은 black color로 정하자.
+
+
+2. 1의 basic barn의 각 face에 있는 실제 bitmap image의 texture를 입히려고 한다. 
+이 경우에 1에서 사용한 face의 color는 무시하고 첨부한 ‘canTop.bmp’ 이미지 파일을 texture로 사용하자. 
+수동 texture mapping 시에 왜곡이 생기지 않도록 basic barn의 face 모양 (비율)과 texture space에서의 모양 (비율)을
+동일하도록 수동 texture mapping을 수행하자. 
+Texture에서 어느 부분을 가져올지는 직접 정하고 어떻게 왜곡이 없도록 수동 texture mapping을 수행했는지 설명하자.
+
+
+3. 2의 결과에 Lecture 14 page 52의 예에서 사용한 조명 모델을 사용해 보자. 
+‘glNormal3f’ 함수를 사용하고 정규화된 법선벡터를 사용하자. 
+Lecture 18와 같이 texture 옵션 설정 시에 ‘GL_REPLACE’와 ‘GL_MODULATE’에 차이가 있는지 확인해보고 두 결과를 모두 보여라.
+‘GL_MODULATE’를 사용시에는 1에서 사용한 face의 색과 texture의 색이 혼합되어 나오는가?
+
+
+4. 아래 그림은 두 개의 rectangle과 alpha값을 이용한 blending 방법을 사용하여 그린 것이다. 
+아래에서 배경은 white, 두 rectangle의 색은 각각 red와 blue이다. 
+Alpha값을 얼마를 주면 아래와 같은 결과를 얻을 수 있을까? 왼쪽 오른쪽 그림에서 각각 source와 destination은 무엇일까? 
+리포트에 설명해 보자. 왜 아래와 같이 보이는지 리포트에 설명해 보자. 
+만일 glEnable(GL_DEPTH_TEST)를 사용하여 depth buffer를 사용하면 결과가 어떻게 바뀔까? 
+출력 결과를 보여주고 결과에 대해서 이유를 설명해보자.
+
+
+5. 
