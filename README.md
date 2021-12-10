@@ -169,6 +169,6 @@ Alpha값을 얼마를 주면 아래와 같은 결과를 얻을 수 있을까? �
 
 <div align="center">
   
-  
+  ![HW4_5](https://user-images.githubusercontent.com/71704350/145564098-bca3b261-351d-41c0-abe3-e19255e01a85.PNG)
 
 </div>
