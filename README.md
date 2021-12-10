@@ -64,6 +64,12 @@ Hexagonal grid를 이루는 각각의 hexagon은 6개의 같은 길이의 변으
 가시 공간 안에 모든 hexagon들이 들어오도록 변의 길이는 적절히 주자.
 CTM과 복합 변환을 이용하여 총 19개의 hexagon이 붙어 있는 (d) 형태의 hexagonal grid를 만들어 보자.
 
+<div align="center">
+
+  ![HW2](https://user-images.githubusercontent.com/71704350/145534551-b1d69fa2-edff-445e-8bc6-b002363a87b5.PNG)
+  
+</div>
+
 
 4. 아래 Dropbox 링크에 있는 코드와 같이 gluLookAt() 함수에서 eye와 center 위치를 정하였다.
 Eye의 위치는 고정하고 center의 위치만 아래 4개와 같이 변경하였을 때 물체의 출력 결과를 보여주고 왜 그렇게 보이는지 설명해 보자. 
