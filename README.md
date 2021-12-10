@@ -44,3 +44,9 @@ drdisc 함수를 완성하여 아래 왼쪽과 같은 도넛 모양을 출력해
   ![HW1_4](https://user-images.githubusercontent.com/71704350/145532386-ca883673-aacb-43cd-981a-b64b2e74165b.PNG)
 
 </div>
+
+
+
+---------------------------
+
+## HW2
