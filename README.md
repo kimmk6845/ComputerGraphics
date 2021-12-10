@@ -157,7 +157,7 @@ Alpha값을 얼마를 주면 아래와 같은 결과를 얻을 수 있을까? �
 
 <div align="center">
   
-  
+  ![HW4_4](https://user-images.githubusercontent.com/71704350/145563563-6550b08b-2d18-48f5-a078-216493043ad6.PNG)
 
 </div>
 
